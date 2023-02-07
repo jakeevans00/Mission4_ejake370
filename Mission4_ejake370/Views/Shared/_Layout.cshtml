@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <!-- Links to css and favicon (icon)-->
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/default.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <!-- Uses Tag helpers to create a dynamic navigation bar-->
+    <nav>
+        <a asp-controller="Blah" asp-action="Index">Home</a>
+        <a asp-controller="Blah" asp-action="GradeCalculator">Grade Calculator</a>
+    </nav>
+
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <!--Reference to JS-->
+    <script src="~/lib/jquery-3.6.3.min.js"></script>
+
+</body>
+</html>

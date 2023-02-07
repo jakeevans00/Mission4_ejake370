@@ -19,6 +19,7 @@ $("#calculate").click(function () {
         + midterm * midtermPercent + final * finalPercent
         + intex * intexPercent;
     final_grade = Math.round(final_grade * 10) / 10;
+    alert("Grade = " + (final_grade));
     $(".score").html(final_grade);
 
     if (final_grade >= 94) {
@@ -57,6 +58,8 @@ $("#calculate").click(function () {
     else {
         $(".letter_grade").html("E");
     }
+
+   
 })
 
 
